@@ -1,0 +1,38 @@
+<script setup lang="ts">
+import { type HTMLAttributes, computed } from 'vue'
+import type { CheckboxRootEmits, CheckboxRootProps } from 'radix-vue'
+import { CheckboxIndicator, CheckboxRoot, useForwardPropsEmits } from 'radix-vue'
+import { Check } from 'lucide-vue-next'
+import { cn } from '@/lib/utils'
+
+const props = defineProps<CheckboxRootProps & { class?: HTMLAttributes['class'] }>()
+const emits = defineEmits<CheckboxRootEmits>()
+
+const delegatedProps = computed(() => {
+  const { class: _, ...delegated } = props
+
+  return delegated
+})
+
+const forwarded = useForwardPropsEmits(delegatedProps, emits)
+</script>
+
+<template>
+  <CheckboxRoot
+    v-bind="forwarded"
+    :class="
+      cn(
+        [
+          'peer shrink-0 rounded-sm border-primary border-placeholder  border-[1.5px] w-[18px] h-[18px] ring-offset-background focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-mainBlue data-[state=checked]:border-none data-[state=checked]:text-primary-foreground'
+        ],
+        props.class
+      )
+    "
+  >
+    <CheckboxIndicator class="flex h-full w-full items-center justify-center text-current">
+      <slot>
+        <Check class="h-4 w-4" />
+      </slot>
+    </CheckboxIndicator>
+  </CheckboxRoot>
+</template>

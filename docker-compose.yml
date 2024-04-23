@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  semena-authorized:
+    build: .
+    restart: always
+    container_name: semena-authorized
+    command: serve -s -l 8010
+    ports:
+      - 8010:8010
