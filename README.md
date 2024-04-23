@@ -1,46 +1,71 @@
-# fgis-semenovodstvo
+# FGIS TP
 
-This template should help get you started developing with Vue 3 in Vite.
+## Table of Contents
 
-## Recommended IDE Setup
+- [FGIS TP](#fgis-tp)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Screenshots](#screenshots)
+  - [Built With](#built-with)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Acknowledgements](#acknowledgements)
+  - [Contacts](#contacts)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Description
 
-## Type Support for `.vue` Imports in TS
+Приложение с формой ОС для ФГИС ТП
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Screenshots
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+<img src="https://raw.githubusercontent.com/Novikov-Pavel/fgis-tp/main/2024-04-23_11-39-48.png" alt="скрин" />
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Built With
 
-## Customize configuration
+<a href="https://www.typescriptlang.org/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="40px" width="40px" alt="Typescript" />
+</a>
+<a href="https://v3.ru.vuejs.org/ru/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" height="40px" width="40px" alt="Vue" />
+</a>
+<a href="https://sass-lang.com/">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" height="40px" width="40px" alt="SCSS" />
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="40px" width="40px" alt="HTML" />
+</a>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Getting Started
 
-## Project Setup
+### Prerequisites
 
-```sh
-npm install
-```
+1. Установите среду разработки [VS Code](https://code.visualstudio.com/download) или любую другую.
+2. Установите терминал или используйте встроенный в VS Code.
 
-### Compile and Hot-Reload for Development
+### Installation
 
-```sh
-npm run dev
-```
+Для запуска проекта потребуется:
 
-### Type-Check, Compile and Minify for Production
+1. Войти в терминал Ctrl+J
+2. Войти в корневой каталог и написать в терминале npm start
+3. Запустится браузер с веб-приложением.
 
-```sh
-npm run build
-```
+## Acknowledgements
 
-### Lint with [ESLint](https://eslint.org/)
+Разрабатывал самостоятельно
 
-```sh
-npm run lint
-```
+## Contacts
+
+<a href="https://t.me/novikov_jobfrontend/">
+  <img src="https://img.shields.io/badge/telegram-26A5E4.svg?&style=for-the-badge&logo=telegram&logoColor=white" height=28 width=110 />
+</a> 
+<a href="https://wa.me/79778129630/">
+  <img src="https://img.shields.io/badge/whatsapp-25D366.svg?&style=for-the-badge&logo=whatsapp&logoColor=white" height=28 width=110 />
+</a>
+<a href="https://www.linkedin.com/in/Novikoff-Pavel">
+  <img src="https://img.shields.io/badge/linkedin-0A66C2.svg?&style=for-the-badge&logo=linkedin&logoColor=white" height=28 width=110/>
+</a>
+<a href="mailto:novikov@jobfrontend.ru">
+  <img alt="" src="https://static.tildacdn.com/tild3334-3665-4263-b964-373834323762/yan.png" height=28 width=110/>
+</a>
